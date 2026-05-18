@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: deosol_db
+    restart: always
+    environment:
+      POSTGRES_USER: deosol
+      POSTGRES_PASSWORD: deosol123
+      POSTGRES_DB: deosol_neo
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256 --auth-local=scram-sha-256"
+    ports:
+      - "5433:5432"
