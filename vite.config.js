@@ -32,5 +32,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/deosol/',
+  base: '/Deosol/',
 })
